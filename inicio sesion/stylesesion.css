@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box; /*para asegurar que dimension contenedor no sean modificados*/
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%; /*1rem=10px*/
+    font-family: 'Mulish', sans-serif;/*toda es de este tipo de letra solo el otro para una seccion*/
+    background: linear-gradient(#21C08B,#AB88FF);
+}
+
+body {
+    font-size: 1.4rem;
+}
+
+.header {
+    width: 100%;
+    height:80px;
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+
+}
+
+.header__img {
+    width:200px;
+
+}
+
+.login__conteiner--social-media img{
+    width:30;
+    height:30px;
+    margin-right:  10px;
+}
+
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    padding: 40px 0px;
+    min-height: calc(100vh - 200px); /*porcentaje que esta viendo el usuario
+ 200px porque el heder es 100 y el footer es 100*/
+
+}
+
+.login__conteiner{
+    background-color : rgba(255,255,255,0.1); /*para tener un blanco mas claro*/
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 68px 40px;
+    min-height: 600px;
+    width:400px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+.login__conteiner--form {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.login__conteiner--remerber {
+    color: white;
+    display: flex;
+    justify-content: space-between; /*un espacio entre los dos elementos*/
+    margin-top: 10px;
+
+}
+
+
+
+
+.login__conteiner--remerber a{
+    color: white;
+    text-decoration: none;
+}
+
+.login__conteiner--remerber a:hover{
+    text-decoration: underline;
+}
+
+
+.login__conteiner--social-media > div { /*>dice que coja todos los div*/
+    display: flex;
+    align-items: center;
+
+    margin:10px;
+}
+
+
+.login__conteiner--register a {
+    font-size: 1.6rem;
+    font-weight: bold; /*negrilla*/
+    color:white;
+    text-decoration: none;
+}
+
+.login__conteiner--register a:hover{
+    text-decoration: underline;
+}
+
+.input {
+    background-color: transparent;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid white;
+    margin:10px;
+    font-size:1.6rem;
+    font-family: 'Mulish', sans-serif;
+    padding: 10px 0;
+    outline: none;/*linea que redondea el elmento al seleccionarlo*/
+
+}
+
+::placeholder{
+    color:white;
+}
+
+.button {
+    background-color : rgba(255,255,255,0.1);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: bold; /*negrilla*/
+    height:50px;
+    font-family: 'Mulish', sans-serif;
+    margin-top: 15px ;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+
+.footer {
+
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+
+}
+
+.footer a{
+    color: white;
+    cursor: pointer;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .login__conteiner {
+
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        width:90%;
+    }
+
+    .footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
