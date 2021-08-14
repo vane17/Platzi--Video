@@ -1,6 +1,6 @@
 # Platzi Video
 
-> Usando HTML Y CSS se programo y dio estilos al front de Platzi Video, una aplicación para ver videos en línea. Se diseña el home y la pantalla de  login. 
+> Usando HTML Y CSS se programó y dio estilos al front de Platzi Video, una aplicación para ver videos en línea. Se diseña el home y la pantalla de  login. 
 
 
 ## Tegnologías 
